@@ -16,14 +16,10 @@ int evenSum() {
     }
     else if (a == b)
     {
-        if (a%2 == 0){
+        if (a%2 == 0)
+        {
             s+=a;
         }
-        if (b%2 == 0)
-        {
-            s+=b;
-        }
-        
     }
     else
     {
