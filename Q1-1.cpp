@@ -14,7 +14,19 @@ int evenSum() {
     {
         return (-1);
     }
-    else if (a < b)
+    else if (a == b)
+    {
+        if (a%2 == 0){
+            s+=a;
+        }
+        if (b%2 == 0)
+        {
+            s+=b;
+        }
+        
+    }
+    
+    else
     {
         for (a; a<=b; a++){
             if (a % 2 == 0){
@@ -24,4 +36,9 @@ int evenSum() {
     }
     return (s);
     
+}
+
+int main(){
+    std::cout << evenSum();
+    return 0;
 }
