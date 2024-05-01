@@ -25,7 +25,6 @@ int evenSum() {
         }
         
     }
-    
     else
     {
         for (a; a<=b; a++){
@@ -36,9 +35,4 @@ int evenSum() {
     }
     return (s);
     
-}
-
-int main(){
-    std::cout << evenSum();
-    return 0;
 }
