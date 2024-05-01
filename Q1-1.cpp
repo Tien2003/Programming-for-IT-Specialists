@@ -1,7 +1,13 @@
 #include <iostream>
 
-int evenSum(int a, int b) {
-
+int evenSum() {
+    int a;
+    int b;
+    
+    std::cout << "Enter the lower bound: ";
+    std::cin >> a;
+    std::cout << "Enter the upper bound: ";
+    std::cin >> b;
     int s = 0;
 
     if (a > b)
@@ -18,18 +24,4 @@ int evenSum(int a, int b) {
     }
     return (s);
     
-}
-
-int main() {
-    int a;
-    int b;
-    
-    std::cout << "Enter the lower bound: ";
-    std::cin >> a;
-    std::cout << "Enter the upper bound: ";
-    std::cin >> b;
-
-    std::cout << evenSum(a, b);
-
-    return 0;
 }
