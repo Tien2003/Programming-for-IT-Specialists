@@ -78,7 +78,7 @@ void create2DArray_singleBlockMemory(){
         cout << endl;
     }
 
-// 5.1
+// 5.2
     int k;
     cout << "column index";
     cin >> k;

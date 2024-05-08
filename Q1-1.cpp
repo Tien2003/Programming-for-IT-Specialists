@@ -20,11 +20,3 @@ int** identity(int n)        // Create an identity matrix using "array of array"
 
     return arr;
 }
-
-
-int main(){
-
-    identity(5);
-
-    return 0;
-}
