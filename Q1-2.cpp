@@ -12,11 +12,6 @@ int** arrayOfArrays(int n_rows, int n_cols){
             arr[i][j] = 1;
         }
     }
-    
-    for (int i=0; i<n_rows; i++){
-        delete [] arr[i];
-    }
-    delete []arr;
 
     return arr;
 }
