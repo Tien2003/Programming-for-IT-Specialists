@@ -1,34 +1,30 @@
 #include <iostream>
+using namespace std;
 
-int evenSum() {
-    int a;
-    int b;
-    
-    std::cout << "Enter the lower bound: ";
-    std::cin >> a;
-    std::cout << "Enter the upper bound: ";
-    std::cin >> b;
-    int s = 0;
-
-    if (a > b)
-    {
-        return (-1);
+int** identity(int n)        // Create an identity matrix using "array of array" method
+{
+    int** arr = new int*[n];
+    for (int i =0; i<n; i++){
+        arr[i] = new int[n];
     }
-    else if (a == b)
-    {
-        if (a%2 == 0)
-        {
-            s+=a;
-        }
-    }
-    else
-    {
-        for (a; a<=b; a++){
-            if (a % 2 == 0){
-                s += a;
+    for (int i=0; i<n; i++){
+        for (int j=0; j<n; j++){
+            if (i==j){
+                arr[i][j] = 1;
+            }
+            else{
+                arr[i][j] = 0;
             }
         }
     }
-    return (s);
-    
+
+    return arr;
+}
+
+
+int main(){
+
+    identity(5);
+
+    return 0;
 }
