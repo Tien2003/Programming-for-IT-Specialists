@@ -17,6 +17,5 @@ int** identity(int n)        // Create an identity matrix using "array of array"
             }
         }
     }
-
     return arr;
 }
