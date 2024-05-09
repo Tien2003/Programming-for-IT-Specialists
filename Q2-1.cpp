@@ -9,4 +9,5 @@ int* singleBlock(int n){
             arr[i*n + j] = i;
         }
     }
+    return arr;
 }
