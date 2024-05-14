@@ -9,3 +9,10 @@ void evenPositions(int* arr, int n){
         }
     }
 }
+
+int main(){
+    int arr[] =  {3, 4, 7, 8, 2};
+    evenPositions(arr, 5);
+    
+    return 0;
+}
