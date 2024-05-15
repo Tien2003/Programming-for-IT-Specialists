@@ -11,13 +11,9 @@ int main() {
     // Using the parameterized constructor
     Account account2("Rhys");
     account2.deposit(500);
-    account2.withdraw(200);
+    account2.withdraw(2000);
     account2.printInfo();  // Output: Name: Rhys, Balance: 300
 
-    // Trying to withdraw more than the balance
-    if (!account2.withdraw(400)) {
-        std::cout << "Withdrawal failed: Insufficient balance." << std::endl;
-    }
 
     return 0;
 }

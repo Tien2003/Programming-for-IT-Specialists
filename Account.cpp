@@ -11,6 +11,7 @@ Account::Account()
 Account::Account(std::string name)
 {
     accName = name;
+    balance = 0;
 }
 
 
@@ -25,7 +26,7 @@ void Account::deposit(int amount)
 
 bool Account::withdraw(int amount)
 {
-    if (amount > 0 && balance > 0){
+    if (amount > 0 && balance > amount){
         balance -= amount;
         return true;
     }
