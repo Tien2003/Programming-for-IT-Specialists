@@ -5,7 +5,6 @@
 class Tiger
 {
     std::string name;
-
 public:
     int age;
 
