@@ -23,5 +23,5 @@ int House::addressLength()
 }
 
 void House::printInfo(){
-    std::cout << "The house at " << address << "is " << description << "." << std::endl;
+    std::cout << "The house at " << address << " is " << description << "." << std::endl;
 }
