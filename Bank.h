@@ -14,7 +14,6 @@ public:
     Bank();
     Bank(int accCapacity);
 
-    ~Bank();
 
     // Methods
     void addAccount(Account* acc);            // Add passed account to accounts array if room left
