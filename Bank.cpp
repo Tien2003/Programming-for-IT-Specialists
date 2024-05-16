@@ -27,7 +27,7 @@ Bank::~Bank()
 
 void Bank::addAccount(Account* acc)
 {
-    if (numAccounts <= capacity)
+    if (numAccounts < capacity)
     {
         accounts[numAccounts] = acc;
         numAccounts += 1;
