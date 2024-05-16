@@ -13,6 +13,7 @@ public:
     // Constructors
     Bank();
     Bank(int accCapacity);
+    ~Bank();
 
 
     // Methods
