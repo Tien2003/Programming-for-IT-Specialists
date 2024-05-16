@@ -16,6 +16,15 @@ Bank::Bank(int accCapacity)
     accounts = new Account*[capacity];
 }
 
+Bank::~Bank()
+{
+    for (int i=0; i<numAccounts; i++)
+    {
+        delete accounts[i];
+    }
+    delete [] accounts;
+}
+
 void Bank::addAccount(Account* acc)
 {
     if (numAccounts <= capacity)
