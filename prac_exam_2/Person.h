@@ -4,7 +4,7 @@
 
 class Person{
     // Variables
-private:
+protected:
     std::string name;
     int age;
     bool hasLicence;
@@ -13,8 +13,8 @@ public:
     // Methods
     Person();
     Person(std::string pName, int pAge);
-    std::string getName();
-    int getAge();
+    virtual std::string getName();
+    virtual int getAge();
     bool getHasLicence();
     // Acquire licence only if age > 16
     void earnLicence();

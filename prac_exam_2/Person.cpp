@@ -5,6 +5,7 @@
 Person::Person(){
     name = "Empty";
     age = 0;
+    hasLicence = false;
 };
 
 Person::Person(std::string pName, int pAge){
@@ -19,12 +20,17 @@ int Person::getAge(){
     return age;
 };
 bool Person::getHasLicence(){
-    if (age >= 16){
+    if (hasLicence == true){
+        std::cout << "true";
         return true;
     }
-    return false;
+    else{
+        return false;
+    }
 };
 // Acquire licence only if age > 16
 void Person::earnLicence(){
-
+    if (age >= 16){
+        hasLicence = true;
+    }
 };

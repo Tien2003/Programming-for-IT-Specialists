@@ -11,12 +11,13 @@ ElectricType::ElectricType(int atkDmg){
 }
 
 int ElectricType::attack(std::string defType){
+    int damage = attackDmg;
     if (defType == "water"){
-        attackDmg = static_cast<int>(attackDmg*1.5);
+        damage = static_cast<int>(damage*1.5);
     }
     else if (defType == "rock")
     {
-        attackDmg = attackDmg / 2;
+        damage = damage / 2;
     } 
-    return attackDmg;
+    return damage;
 }
